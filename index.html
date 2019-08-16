@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Send Recieve | Ritvik</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- sender div block -->
+            <div class="sender">
+                <div class="header">
+                    <div>
+                        <i class="fa fa-chevron-left"></i>
+                        <img src="./img/user1.jpg" class="iconSize" alt="senderProfile">
+                        <p>Jeff_12</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-video"></i>
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+                <!-- mesaage area -->
+                <div class="messageArea" id="messageBoxSender">
+
+                </div>
+                <!-- footer area for text inout and outpiut -->
+                <div class="footer">
+                    <div class="navigation">
+                        <div><i class="fa fa-camera"></i></div>
+                        <input type="text" placeholder="Message..." id="senderMessage">
+                        <div class="options" id="optionsSender">
+                            <i class="fa fa-microphone"></i>
+                            <i class="fa fa-file-image-o"></i>
+                            <i class="fa fa-folder"></i>
+                        </div>
+
+
+                        <button id="senderSendBtn" onclick="senderToReceiver()">Send</button>
+                    </div>
+                    <!-- footer ends hre -->
+                </div>
+            </div>
+            <!-- reciever side -->
+            <div class="receiver">
+                <div class="header">
+                    <div>
+                        <i class="fa fa-chevron-left"></i>
+                        <img src="./img/user2.jpg" class="iconSize" alt="senderProfile">
+                        <p>silen_killer</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-video" id="video"></i>
+                        <i class="fa fa-info-circle" id="info"></i>
+                    </div>
+                </div>
+                <!-- mesaage area -->
+                <div class="messageArea" id="messageBoxReceiver">
+
+                </div>
+                <!-- footer area for text inout and outpiut -->
+                <div class="footer">
+                    <div class="navigation">
+                        <div><i class="fa fa-camera"></i></div>
+                        <input type="text" placeholder="Message..." id="receiverMessage">
+                        <div class="options" id="optionsReceiver">
+                            <i class="fa fa-microphone"></i>
+                            <i class="fa fa-file-image-o"></i>
+                            <i class="fa fa-folder"></i>
+                        </div>
+                        <button id="receiverSendBtn" onclick="receiverToSender()">Send</button>
+                    </div>
+                    <!-- footer ends hre -->
+                </div>
+            </div>
+            <!-- reciever ends here -->
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./js/main.js"></script>
