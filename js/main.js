@@ -29,7 +29,7 @@ function checkEmpty()
 function senderToReceiver()
 {
         var Message=document.getElementById("senderMessage").value;
-        console.log(Message);
+        // console.log(Message);
         var receiverBox=document.getElementById("messageBoxReceiver");
         var senderBox=document.getElementById("messageBoxSender");
         senderBox.innerHTML+="<div class='outText'><div class='alignRight'>"+ `${Message}` +"</div></div>";
@@ -40,7 +40,7 @@ function senderToReceiver()
 function receiverToSender()
 {
     var Message=document.getElementById("receiverMessage").value;
-    console.log(Message);
+//     console.log(Message);
     var senderBox=document.getElementById("messageBoxSender");
     var receiverBox=document.getElementById("messageBoxReceiver");
     receiverBox.innerHTML+="<div class='outText'> <div class='alignRight'>"+ `${Message}` +"</div></div>";    
