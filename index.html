@@ -1,92 +1,181 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Send Recieve | Ritvik</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
-
+    <title>Instagram Message Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
 </head>
-
-<body>
-    <div class="wrapper">
-        <div class="container">
-            <!-- sender div block -->
-            <div class="sender">
-                <div class="header">
-                    <div>
-                        <i class="fa fa-chevron-left"></i>
-                        <img src="./img/user1.jpg" class="iconSize" alt="senderProfile">
-                        <p>Jeff_12</p>
-                    </div>
-                    <div>
-                        <i class="fa fa-video"></i>
-                        <i class="fa fa-info-circle"></i>
-                    </div>
-                </div>
-                <!-- mesaage area -->
-                <div class="messageArea" id="messageBoxSender">
-
-                </div>
-                <!-- footer area for text inout and outpiut -->
-                <div class="footer">
-                    <div class="navigation">
-                        <div><i class="fa fa-camera"></i></div>
-                        <input type="text" placeholder="Message..." id="senderMessage">
-                        <div class="options" id="optionsSender">
-                            <i class="fa fa-microphone"></i>
-                            <i class="fa fa-file-image-o"></i>
-                            <i class="fa fa-folder"></i>
-                        </div>
-
-
-                        <button id="senderSendBtn" onclick="senderToReceiver()">Send</button>
-                    </div>
-                    <!-- footer ends hre -->
+<body class="">
+    <!-- body starts here -->
+   
+  <div class=" w-full h-full flex justify-center items-center flex-col mt-8 mb-8">
+    <div class="w-3/5  shadow-lg border border-gray-200 rounded-md">
+        <!-- outer box -->
+        <header class="flex justify-between items-center p-2">
+            <div class="flex justify-start items-center">
+            <!-- left div -->
+                <span>
+                    <svg  class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                </span>
+                <div class="flex justify-start items-center">
+                    <img class="w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                    <p class="text-gray-500 font-semibold  text-sm ml-2">Jeff Bezos</p>
                 </div>
             </div>
-            <!-- reciever side -->
-            <div class="receiver">
-                <div class="header">
-                    <div>
-                        <i class="fa fa-chevron-left"></i>
-                        <img src="./img/user2.jpg" class="iconSize" alt="senderProfile">
-                        <p>silen_killer</p>
-                    </div>
-                    <div>
-                        <i class="fa fa-video" id="video"></i>
-                        <i class="fa fa-info-circle" id="info"></i>
-                    </div>
-                </div>
-                <!-- mesaage area -->
-                <div class="messageArea" id="messageBoxReceiver">
 
+            <div class="flex justify-end items-center">
+                <!-- right division -->
+                <span>
+                    <svg  class="w-5 h-5 text-gray-500 mr-2 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                </span>
+                <span>
+                    <svg  class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                </span>
+            </div>
+
+        </header>
+        <!--  header ends here -->
+        <section class="h-96 flex flex-col justi" >
+            <!--  msg section starts here -->
+            <div id="msg1" class="h-full p-4 shadow-sm">
+                <!-- message container -->
+                
+                
+            </div>
+            <div class="flex p-2 justify-between items-center shadow-xl ">
+                <div class="flex justify-start items-center">
+                    <!-- left div -->
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                    </span>
+                    <input id="input1" class="text-xs font-semibold ml-2 w-full" placeholder="Enter message..." type="text" name="message">
                 </div>
-                <!-- footer area for text inout and outpiut -->
-                <div class="footer">
-                    <div class="navigation">
-                        <div><i class="fa fa-camera"></i></div>
-                        <input type="text" placeholder="Message..." id="receiverMessage">
-                        <div class="options" id="optionsReceiver">
-                            <i class="fa fa-microphone"></i>
-                            <i class="fa fa-file-image-o"></i>
-                            <i class="fa fa-folder"></i>
-                        </div>
-                        <button id="receiverSendBtn" onclick="receiverToSender()">Send</button>
-                    </div>
-                    <!-- footer ends hre -->
+                <div class="hidden" id="jeff-send" >
+                    <button>
+                        <span>
+                            <svg class="text-indigo-500 w-5 h-5 transform hover:scale-105 transition-all duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                              </svg>
+                        </span>
+                    </button>
+                </div>
+                <div id="jeff-media" class="flex justify-start items-center">
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                          </svg>
+                    </span>
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                          </svg>
+                    </span>
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    </span>
                 </div>
             </div>
-            <!-- reciever ends here -->
-        </div>
+            <!--  msg section ends here -->
+
+        </section>
     </div>
+    <!--  sencond message box -->
+    <div class="w-3/5  shadow-lg border border-gray-200 rounded-md">
+        <!-- outer box -->
+        <header class="flex justify-between items-center p-2">
+            <div class="flex justify-start items-center">
+            <!-- left div -->
+                <span>
+                    <svg  class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                </span>
+                <div class="flex justify-start items-center">
+                    <img class="w-8 h-8 rounded-full" src="https://www.niemanlab.org/images/Greg-Emerson-edit-2.jpg" alt="">
+                    <p class="text-gray-500 font-semibold  text-sm ml-2">Mark Juck</p>
+                </div>
+            </div>
 
+            <div class="flex justify-end items-center">
+                <!-- right division -->
+                <span>
+                    <svg  class="w-5 h-5 text-gray-500 mr-2 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                </span>
+                <span>
+                    <svg  class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                </span>
+            </div>
+
+        </header>
+        <!--  header ends here -->
+        <section class="h-96 flex flex-col justi" >
+            <!--  msg section starts here -->
+            <div id="msg2" class="h-full p-4 shadow-sm">
+                <!-- message container -->
+                
+                
+                
+            </div>
+            <div class="flex p-2 justify-between items-center shadow-xl ">
+                <div class="flex justify-start items-center">
+                    <!-- left div -->
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                    </span>
+                    <input id="input2" class="text-xs font-semibold ml-2 w-full" placeholder="Enter message..." type="text" name="message">
+                </div>
+                <div class="hidden" id="mark-send" >
+                    <button>
+                        <span>
+                            <svg class="text-indigo-500 w-5 h-5 transform hover:scale-105 transition-all duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                              </svg>
+                        </span>
+                    </button>
+                </div>
+                <div id="mark-media" class="flex justify-start items-center">
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                          </svg>
+                    </span>
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                          </svg>
+                    </span>
+                    <span>
+                        <svg class="w-5 h-5 text-gray-500 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    </span>
+                </div>
+            </div>
+            <!--  msg section ends here -->
+            
+        </section>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+    <!--  body ends here -->
 </body>
-
 </html>
-<script src="./js/main.js"></script>
